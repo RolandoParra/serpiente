@@ -1,6 +1,7 @@
 # ── Colores ──────────────────────────────────────────────
 NEGRO  = (0,   0,   0)
 BLANCO = (255, 255, 255)
+import math
 
 # ── Dimensiones ───────────────────────────────────────────
 BALDOSA_TAMANIO   = 32
@@ -11,7 +12,7 @@ ALTURA  = BALDOSA_TAMANIO * BALDOSA_NUMERO
 ANCHURA = BALDOSA_TAMANIO * BALDOSA_NUMERO + MARCADOR_ANCHURA
 
 # ── Juego ─────────────────────────────────────────────────
-PUNTO_UNIDAD              = 1
+PUNTO_UNIDAD              = math.pi * 99
 DURACION_COMIDA_DESAPARECE = 5_500   # ms
 FPS                       = 7
 

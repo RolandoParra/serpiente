@@ -49,7 +49,7 @@ def main() -> None:
                 elif event.key == pygame.K_s  and serpiente.DIRECCION != 'A': serpiente.DIRECCION = 'B'
 
         # Aparición aleatoria de comida
-        if random.randint(0, 18) == 0:
+        if random.randint(0, 2) == 0:
             nueva_comida = COMIDA()
             if not pygame.sprite.spritecollide(nueva_comida, lista_global, False):
                 sfx_comida.play()
@@ -65,7 +65,7 @@ def main() -> None:
         # Game over
         if serpiente.TERMINA:
             sfx_perdido.play()
-            pygame.time.wait(5_000)
+            pygame.time.wait(1_00)
             termina = True
 
         pygame.display.flip()
