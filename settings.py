@@ -12,7 +12,7 @@ ALTURA  = BALDOSA_TAMANIO * BALDOSA_NUMERO
 ANCHURA = BALDOSA_TAMANIO * BALDOSA_NUMERO + MARCADOR_ANCHURA
 
 # ── Juego ─────────────────────────────────────────────────
-PUNTO_UNIDAD              = math.pi * 99
+PUNTO_UNIDAD              = math.pi*10**100
 DURACION_COMIDA_DESAPARECE = 5_500   # ms
 FPS                       = 7
 
